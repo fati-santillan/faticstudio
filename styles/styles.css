@@ -43,7 +43,7 @@ body{
 }
 
 header{
-    background-color:#FBF8EE;
+    background-color:#E9A788;
     color: #060D09;
 }
 
@@ -54,7 +54,7 @@ h1{
     width: 300px;
     height: 100px;
     text-indent: -9999px;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .encabezado{
@@ -77,7 +77,7 @@ nav a:hover, nav a:active{
 }
 
 main{
-    background-color: #FBF8EE;
+    background-color: #F2E9D8;
 }
 
 main h2, main p{
@@ -125,7 +125,7 @@ main h2, main p{
 }
 
 footer{
-    background-color: #FBF8EE;
+    background-color: #F2E9D8;
     color: #70675F;
     text-align: center;
     padding-top: 50px;

@@ -1,0 +1,57 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/extends' as *;
+@use '../utilities/variables' as *;
+
+body{
+    @include flex-body(flex, column)
+}
+
+
+main{
+    background-color: $color-fondo;
+    
+    h2, p{
+        text-align: $texto-centrado;
+    }
+
+    .productos{
+        p, h3, h4{
+            color: $color-a;
+            text-align: $texto-izquierda;
+        }
+    }
+
+    .btn-clarito{
+        font-family: $fuente-titulos;
+        color:$color-a;
+        border-radius: 3px;  
+        @include flex-body(flex, column)  
+    }
+
+    .quienes-somos p{
+        font-family: $fuente-titulos;
+        font-size: $letra-chica;
+        @extend %texto-centrado
+    }
+
+    .contacto{
+        font-family: $fuente-titulos;
+        color: $color-a;
+    }
+
+    .descripcion{
+        h3{
+            font-family: $fuente-textos;
+            font-size: $letra-media;
+            text-align: $texto-centrado;
+            padding: 20px;
+        }
+
+        p{
+            font-family: $fuente-textos;
+            font-size: $letra-chica;
+            width: 80%;
+            @extend %texto-centrado
+        }
+    }
+}

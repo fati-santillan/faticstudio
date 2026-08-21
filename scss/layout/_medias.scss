@@ -1,0 +1,39 @@
+@use '../utilities/mixins' as *;
+
+@media (max-width: 768px){
+    
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+
+        nav{
+            flex-direction: column;
+            width: 100%;
+            gap: 4px;
+            @include flex-base(center,center)
+        }
+
+    }
+    
+    main{
+        .descripcion{
+            padding: 15px 0;
+        }
+    }
+
+    footer{
+        .contenedor-footer{
+            @include flex-footer(column,center,center);
+            gap: 20px;
+        }
+
+        h3{
+            margin-bottom: 6px;
+        }
+
+        p{
+         margin-top: 25px;
+        }
+    }
+}

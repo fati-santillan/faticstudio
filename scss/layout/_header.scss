@@ -1,0 +1,20 @@
+@use '../utilities/variables' as *;
+
+header{
+    background-color: $color-encabezado;
+    color: $color-letras;
+    
+    h1{
+        background-image: url(../assets/logos/FaticStudio.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 100px;
+        text-indent: -9999px;
+        margin: 2rem;
+    }
+
+    .encabezado{
+        @include flex-encabezado(flex, center)
+    }
+}

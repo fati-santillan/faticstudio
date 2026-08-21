@@ -1,0 +1,43 @@
+@use '../utilities/variables' as *;
+
+h2,h3,p{
+    font-family: $fuente-titulos;
+}
+
+h4,li{
+    font-family: $fuente-textos;
+}
+
+h2{
+    font-size: $letra-grande;
+}
+
+h3,p{
+    font-size: $letra-media;
+}
+
+h4{
+    font-size: $letra-chica;
+}
+
+a{
+    color: $color-a;
+    font-family: $fuente-textos;
+    text-decoration: $sin-estilo;
+}
+
+.textos-encabezado{
+    text-align: $texto-izquierda;
+    padding-left: 20px;
+}
+
+.linknav{
+     color: $color-a;
+     text-decoration: $sin-estilo;
+    
+    a{
+        &:hover, &:active{
+            font-weight: $font-hover-active;
+        }
+    }
+}

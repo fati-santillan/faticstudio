@@ -1,0 +1,21 @@
+@mixin flex-base($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-body($display,$direction){
+    display: $display;
+    flex-direction: $direction;
+}
+
+@mixin flex-encabezado($display,$justify){
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin flex-footer($flex,$justify,$align){
+    flex-direction: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

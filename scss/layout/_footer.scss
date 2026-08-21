@@ -1,0 +1,44 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+footer{
+    background-color: $color-fondo;
+    color: $color-a;
+    text-align: $texto-centrado;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    .contenedor-footer{
+        @include flex-body(flex, row);
+        gap: 50px;
+        @include flex-base(center, flex-start);
+    }
+
+    .redes{
+        list-style: $sin-estilo;
+    }
+
+    .redes {
+            img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+    }
+
+    ul{   
+        text-align: $texto-izquierda;
+        padding-left: 20px;
+
+        li{
+            &:hover, &:active{
+               font-weight: $font-hover-active; 
+            }
+        }
+    }
+    p{
+       margin-top: 50px; 
+    }
+
+
+}

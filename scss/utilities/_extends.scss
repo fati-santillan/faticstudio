@@ -1,0 +1,7 @@
+@use '../utilities/variables' as *;
+
+%texto-centrado{
+    max-width: 700px;
+    margin: auto;
+    text-align: $texto-center;
+}

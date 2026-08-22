@@ -43,8 +43,18 @@ body{
 }
 
 header{
-    background-color:#E9A788;
+    background: linear-gradient(180deg, rgba(233, 167, 136, 1) 0%, rgba(242, 233, 216, 1) 44%);;
     color: #060D09;
+    
+    transition: background 1s ease;
+
+    &:hover {
+        background: linear-gradient(
+            180deg,
+            rgba(242, 233, 216, 1) 0%,
+            rgba(233, 167, 136, 1) 100%
+        );
+    }
 }
 
 h1{
